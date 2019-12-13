@@ -1,0 +1,1293 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Detroit - Demake Human</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>27200</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1920</width>
+        <height>1080</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>titleScreen</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">NW.js</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Maps">
+            <object-type name="couloir" sid="118382927064098">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\couloir.png" />
+            </object-type>
+            <object-type name="couloirAquarium" sid="917782898206850">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\aquarium.png" />
+            </object-type>
+            <object-type name="sol" sid="208692584185334">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="559054308535126">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\planchemdr.png" />
+            </object-type>
+            <object-type name="chambreParents" sid="351758960167634">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="316715356563339" speed="5">
+                        <frame duration="1" hotspotX="0.50211" hotspotY="0.503759" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\chambre2.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.496241" />
+                                <point x="0.835443" y="0.706767" />
+                                <point x="0.49789" y="1" />
+                                <point x="0.164557" y="0.706767" />
+                                <point x="0" y="0.496241" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="couloirPassage" sid="929182674635501">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\passage.png" />
+            </object-type>
+            <object-type name="solFond" sid="332176309871388">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\planchemdr.png" />
+            </object-type>
+            <object-type name="chambreEmma" sid="104045068594754">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="309040953953399" speed="5">
+                        <frame duration="1" hotspotX="0.500277" hotspotY="0.5" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\chambre1.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.999445" y="0.00134771" />
+                                <point x="0.999445" y="0.998652" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mur" sid="931112278377961">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="307821664097008">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <texture />
+            </object-type>
+            <object-type name="salon" sid="965882542164144">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="942643915687620" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\salon.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0" />
+                                <point x="0.955078" y="0.175573" />
+                                <point x="0.955078" y="0.5" />
+                                <point x="0.995605" y="0.982824" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="terasse" sid="211464009052027">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="753784808635969" speed="5">
+                        <frame duration="1" hotspotX="0.50032" hotspotY="0.500741" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\balcon.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="solTerrasse" sid="231447822642025">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="760860294912279">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <texture />
+            </object-type>
+            <object-type name="ballustrade" sid="305652257831011">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="475179827483536" speed="5">
+                        <frame duration="1" hotspotX="0.500297" hotspotY="0.5" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\ballustrade.png">
+                            <collision-poly>
+                                <point x="0.00237389" y="0.00840336" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="commodeCouloir" sid="912657768536779">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="818106894112805" speed="5">
+                        <frame duration="1" hotspotX="0.498084" hotspotY="0.5" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\commode.png">
+                            <collision-poly>
+                                <point x="0.950192" y="0.5" />
+                                <point x="0.950192" y="0.923529" />
+                                <point x="0.501916" y="1" />
+                                <point x="0.0498084" y="0.923529" />
+                                <point x="0.0498084" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="murVert" sid="763905180716539">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="658734782080039" speed="5">
+                        <frame duration="1" hotspotX="0.509677" hotspotY="0.503623" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\murvert.png">
+                            <collision-poly>
+                                <point x="0.00645161" y="0.00543478" />
+                                <point x="0.996774" y="0.0126812" />
+                                <point x="0.506452" y="0.503623" />
+                                <point x="0.506452" y="0.719203" />
+                                <point x="0.506452" y="0.427536" />
+                                <point x="0.0870968" y="0.956522" />
+                                <point x="0.00645161" y="0.503623" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="murJaune" sid="569336385996549">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="706872569767300" speed="5">
+                        <frame duration="1" hotspotX="0.509677" hotspotY="0.503623" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\murjaune.png">
+                            <collision-poly>
+                                <point x="0.00645161" y="0.00543478" />
+                                <point x="0.996774" y="0.0126812" />
+                                <point x="0.506452" y="0.503623" />
+                                <point x="0.506452" y="0.719203" />
+                                <point x="0.506452" y="0.427536" />
+                                <point x="0.0870968" y="0.956522" />
+                                <point x="0.00645161" y="0.503623" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Interact">
+            <object-type name="portrait" sid="154647155913925">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="585382960961044" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="965037397785620" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\cadre.jpg">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="tabletteEmma" sid="127012440032974">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="142886203198618" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="845837229668690" speed="5">
+                        <frame duration="1" hotspotX="0.467532" hotspotY="0.48155" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\tablette.png">
+                            <collision-poly>
+                                <point x="0.0865801" y="0" />
+                                <point x="0.913421" y="0" />
+                                <point x="0.913421" y="1" />
+                                <point x="0.0865801" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="tablettePapa" sid="409775705930901">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="668717557995706" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="491722510000323" speed="5">
+                        <frame duration="1" hotspotX="0.467532" hotspotY="0.48155" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\tablette.png">
+                            <collision-poly>
+                                <point x="0.0865801" y="0" />
+                                <point x="0.913421" y="0" />
+                                <point x="0.913421" y="1" />
+                                <point x="0.0865801" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="pistolet" sid="326399001941791">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="588023903447273" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="551376332040012" speed="5">
+                        <frame duration="1" hotspotX="0.501109" hotspotY="0.501767" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\pistolet.png">
+                            <collision-poly>
+                                <point x="1" y="0" />
+                                <point x="0.0886918" y="1" />
+                                <point x="0.0886918" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="munitions" sid="192326537285673">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="179939407784610" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="539396120042310" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\cartouches.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="valise" sid="995738868136808">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="357541806531840" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="451299182864832" speed="5">
+                        <frame duration="1" hotspotX="0.502283" hotspotY="0.502538" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\valise.png">
+                            <collision-poly>
+                                <point x="0.0913242" y="0" />
+                                <point x="0.908676" y="0" />
+                                <point x="0.908676" y="1" />
+                                <point x="0.0913242" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="chaussure" sid="896181365907140">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="922234070491812" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="653036197348252" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501393" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\chaussure.png">
+                            <collision-poly>
+                                <point x="0.494881" y="0" />
+                                <point x="0.887372" y="0.181058" />
+                                <point x="0.931741" y="1" />
+                                <point x="0.0682594" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="frigoTélé" sid="334712566412404">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="653346288805416" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="808361021935826" speed="5">
+                        <frame duration="1" hotspotX="0.501577" hotspotY="0.5" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\frigo.png">
+                            <collision-poly>
+                                <point x="0.126183" y="0" />
+                                <point x="0.873817" y="0" />
+                                <point x="0.873817" y="1" />
+                                <point x="0.126183" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="casqueMusique" sid="231993968443075">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="212961127701423" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="654558028184099" speed="5">
+                        <frame duration="1" hotspotX="0.501124" hotspotY="0.501792" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\casque.png">
+                            <collision-poly>
+                                <point x="0.910111" y="0" />
+                                <point x="0.910111" y="1" />
+                                <point x="0.0898877" y="1" />
+                                <point x="0.0898877" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="table" sid="447215555795936">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="129467346520240" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="877979687580078" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.330827" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\table.png">
+                            <collision-poly>
+                                <point x="0.0872093" y="0.0037594" />
+                                <point x="0.874031" y="0" />
+                                <point x="0.874031" y="1" />
+                                <point x="0.0872093" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="policierMort" sid="222135062392749">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="343746763298113" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="202457647926059" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\mort2.png">
+                            <collision-poly>
+                                <point x="0.3" y="0" />
+                                <point x="0.9" y="0" />
+                                <point x="0.9" y="1" />
+                                <point x="0.3" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="papaMort" sid="762134509921859">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="127720183610000" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="758462297287482" speed="5">
+                        <frame duration="1" hotspotX="0.510204" hotspotY="0.545455" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\mort1.png">
+                            <collision-poly>
+                                <point x="0.102041" y="0" />
+                                <point x="0.897959" y="0" />
+                                <point x="0.897959" y="1" />
+                                <point x="0.102041" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="poisson" sid="692456086635138">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="715344677657702" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="423393038622987" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.507937" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\poisson.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="aquarium" sid="506210713971593">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="657201299808822" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="928354629664648" speed="5">
+                        <frame duration="1" hotspotX="0.868421" hotspotY="0.380165" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\aquarium.png">
+                            <collision-poly>
+                                <point x="0.175439" y="0" />
+                                <point x="0.824562" y="0" />
+                                <point x="0.824562" y="1" />
+                                <point x="0.175439" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="hélicoptère" sid="561747722581053">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="894902994645855" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="575681469046490" speed="10">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\helicoptere.png">
+                            <collision-poly>
+                                <point x="0.0491525" y="0.0857988" />
+                                <point x="0.5" y="0.0857988" />
+                                <point x="0.742373" y="0.449704" />
+                                <point x="0.99661" y="0.5" />
+                                <point x="0.738983" y="0.544379" />
+                                <point x="0.5" y="0.911243" />
+                                <point x="0" y="1" />
+                                <point x="0.0525424" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.0491525" y="0.0857988" />
+                                <point x="0.5" y="0.0857988" />
+                                <point x="0.742373" y="0.449704" />
+                                <point x="0.99661" y="0.5" />
+                                <point x="0.738983" y="0.544379" />
+                                <point x="0.5" y="0.911243" />
+                                <point x="0" y="1" />
+                                <point x="0.0525424" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="porteSdB" sid="110137010634493">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="479028287568761" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="201949912633910" speed="5">
+                        <frame duration="1" hotspotX="0.502008" hotspotY="0.5" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\aquarium.png">
+                            <collision-poly>
+                                <point x="0.160643" y="0" />
+                                <point x="0.839357" y="0" />
+                                <point x="0.839357" y="1" />
+                                <point x="0.160643" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="porteEmma" sid="820590970066567">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="218679089253955" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="344820307804641" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\aquarium.png">
+                            <collision-poly>
+                                <point x="0.16" y="0" />
+                                <point x="0.84" y="0" />
+                                <point x="0.84" y="1" />
+                                <point x="0.16" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="tablettePapaPosition" sid="860045366369778">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="550859298444075" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="swat" sid="393056499934376">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="200016175738315" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="326874364258989" speed="5">
+                        <frame duration="1" hotspotX="0.510638" hotspotY="0.380952">
+                            <collision-poly>
+                                <point x="0.212766" y="0" />
+                                <point x="0.574468" y="0" />
+                                <point x="0.574468" y="1" />
+                                <point x="0.212766" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.511111" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="pistoletPosition" sid="200089557099978">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="735181756177558" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="portraitZoom" sid="289260587633524">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="693149494795139" speed="5">
+                        <frame duration="1" hotspotX="0.506849" hotspotY="0.5" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\portraitZoom.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="tabletteZoom" sid="642651751545912">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="755174145028366" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.506494" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\tabletteZoom.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="versCouloir" sid="545475673518987">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="566796536445856" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="105054904625217" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="versCuisine" sid="966232811252998">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="939898738159791" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="803720555258314" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="versSalon" sid="663458549392069">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="507643091647148" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="205091006511529" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Personnages">
+            <object-type name="Connor" sid="922593368067368">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Story" sid="314581850105771" type="boolean" />
+                    <instance-variable name="Gun" sid="358726647487204" type="boolean" />
+                    <instance-variable name="Outside" sid="529395422443537" type="boolean" />
+                    <instance-variable name="prenomDaniel" sid="869844694340028" type="boolean" />
+                    <instance-variable name="cold" sid="500111736347772" type="boolean" />
+                    <instance-variable name="friendly" sid="486923184578503" type="boolean" />
+                    <instance-variable name="gunMensonge" sid="427331471559367" type="boolean" />
+                    <instance-variable name="causeIncident" sid="576248286444352" type="boolean" />
+                    <instance-variable name="causeIncident2" sid="738788110307281" type="boolean" />
+                    <instance-variable name="emmaDaniel" sid="465306304793749" type="boolean" />
+                    <instance-variable name="emmaDaniel2" sid="680432863724315" type="boolean" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Platform" sid="751287083776089">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="stand" pingpong="0" repeatcount="1" repeatto="0" sid="164874179938132" speed="1">
+                        <frame duration="1" hotspotX="0.50365" hotspotY="0.5">
+                            <image-point name="fin" x="-3.76642" y="0.413043" />
+                            <collision-poly>
+                                <point x="0.185185" y="0" />
+                                <point x="0.814815" y="0" />
+                                <point x="0.814815" y="1" />
+                                <point x="0.185185" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.50365" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.185185" y="0" />
+                                <point x="0.814815" y="0" />
+                                <point x="0.814815" y="1" />
+                                <point x="0.185185" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="10" loop="0" name="walk" pingpong="0" repeatcount="1" repeatto="0" sid="860024552289870" speed="8">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.185185" y="0" />
+                                <point x="0.814815" y="0" />
+                                <point x="0.814815" y="1" />
+                                <point x="0.185185" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.185185" y="0" />
+                                <point x="0.814815" y="0" />
+                                <point x="0.814815" y="1" />
+                                <point x="0.185185" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.185185" y="0" />
+                                <point x="0.814815" y="0" />
+                                <point x="0.814815" y="1" />
+                                <point x="0.185185" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.185185" y="0" />
+                                <point x="0.814815" y="0" />
+                                <point x="0.814815" y="1" />
+                                <point x="0.185185" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.185185" y="0" />
+                                <point x="0.814815" y="0" />
+                                <point x="0.814815" y="1" />
+                                <point x="0.185185" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.185185" y="0" />
+                                <point x="0.814815" y="0" />
+                                <point x="0.814815" y="1" />
+                                <point x="0.185185" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.185185" y="0" />
+                                <point x="0.814815" y="0" />
+                                <point x="0.814815" y="1" />
+                                <point x="0.185185" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.185185" y="0" />
+                                <point x="0.814815" y="0" />
+                                <point x="0.814815" y="1" />
+                                <point x="0.185185" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.185185" y="0" />
+                                <point x="0.814815" y="0" />
+                                <point x="0.814815" y="1" />
+                                <point x="0.185185" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.185185" y="0" />
+                                <point x="0.814815" y="0" />
+                                <point x="0.814815" y="1" />
+                                <point x="0.185185" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="withGun" pingpong="0" repeatcount="1" repeatto="0" sid="660509803261651" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\connorGun.png">
+                            <collision-poly>
+                                <point x="0.185185" y="0" />
+                                <point x="0.814815" y="0" />
+                                <point x="0.814815" y="1" />
+                                <point x="0.185185" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Daniel" sid="553940948205464">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="299282219143206" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="708707137838353" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\daniel.png">
+                            <collision-poly>
+                                <point x="0.235294" y="0" />
+                                <point x="0.764705" y="0" />
+                                <point x="0.764705" y="1" />
+                                <point x="0.235294" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Emma" sid="107736370395505">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="753583311220018" speed="5">
+                        <frame duration="1" hotspotX="0.552083" hotspotY="0.460733" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\emma.png">
+                            <collision-poly>
+                                <point x="0.109375" y="0.10733" />
+                                <point x="0.552083" y="0.0026178" />
+                                <point x="0.942708" y="0.133508" />
+                                <point x="0.890625" y="0.460733" />
+                                <point x="0.734375" y="0.683246" />
+                                <point x="0.552083" y="0.866492" />
+                                <point x="0.317708" y="0.709424" />
+                                <point x="0.109375" y="0.460733" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Captain" sid="279451270149037">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="briefingOK" sid="166366400544789" type="boolean" />
+                    <instance-variable name="story" sid="691474486504940" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="601333799865858" speed="5">
+                        <frame duration="1" hotspotX="0.429825" hotspotY="0.471014" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\allen.png">
+                            <collision-poly>
+                                <point x="0.666666" y="0.979592" />
+                                <point x="0.333333" y="0.979592" />
+                                <point x="0.333333" y="0" />
+                                <point x="0.666666" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Misc">
+            <object-type name="camera" sid="990842281854000">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="519677859136187" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="haut" sid="505553859864695">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="537291087654657" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Audio" sid="263679739442704">
+                <plugin id="Audio" />
+            </object-type>
+            <object-type name="dehors" sid="211269441400141">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="story" sid="404047079473351" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="767979234066008" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="trust" sid="378339850632486">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="directions" sid="590401228221555">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="337862016270644">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="847561567522590" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.00180376" y="0.00396824" />
+                                <point x="0.452742" y="0.00396824" />
+                                <point x="0.452742" y="0.996032" />
+                                <point x="0.00180376" y="0.996032" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="fondu" sid="288072256065282">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="970999639475859">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="652191199882763" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="fondTitre" sid="555040753367877">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="214163610449991" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500675">
+                            <collision-poly>
+                                <point x="0.000833333" y="0.00269906" />
+                                <point x="0.999167" y="0.00269906" />
+                                <point x="0.999167" y="0.997301" />
+                                <point x="0.000833333" y="0.997301" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500675" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="fonduTitre" sid="206916798963181">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="948697965627688">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="754354353149839" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="logo" sid="961804979994179">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="595840605111210" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\logo.png">
+                            <collision-poly>
+                                <point x="0.0543478" y="0.217391" />
+                                <point x="0.5" y="0.0869565" />
+                                <point x="0.945652" y="0.217391" />
+                                <point x="0.902174" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.608696" />
+                                <point x="0" y="1" />
+                                <point x="0.0543478" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spaceToStart" sid="583366534464525">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="493705502917843">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="539618068668723" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.503226" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\start.png">
+                            <collision-poly>
+                                <point x="0.0164021" y="0.2" />
+                                <point x="0.5" y="0.0903226" />
+                                <point x="0.989947" y="0.122581" />
+                                <point x="0.978836" y="0.741935" />
+                                <point x="0.5" y="0.883871" />
+                                <point x="0.00952381" y="0.883871" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="interface">
+            <object-folder name="boutons">
+                <object-type name="2instructions" sid="419498101352723">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="324841923491750" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="3crédits" sid="477275929518517">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="817831613120012" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="1réussite" sid="173398547311403">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="631378347880237" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="textRéussite" sid="207265986842596">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="textInstructions" sid="770561344297454">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="textCredits" sid="302496547469654">
+                    <plugin id="Text" />
+                </object-type>
+            </object-folder>
+            <object-folder name="Texte">
+                <object-type name="0Texte" sid="240586678418891">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="1Choix" sid="577831449501900">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="2Choix" sid="353593234814390">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="3Choix" sid="564201218422281">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="4Choix" sid="760785429374860">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="5Choix" sid="789061846619448">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="6Choix" sid="479691579549553">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="7Choix" sid="842592640556654">
+                    <plugin id="Text" />
+                </object-type>
+            </object-folder>
+            <object-type name="fond" sid="696115276952035">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="921216434683904" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Fins">
+            <object-type name="fin1" sid="531877701621565">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="315658088370326" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\Ending1.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="fin2" sid="257393263861201">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="282466476788502" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\Ending2.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="fin3" sid="368369753698947">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="963064415134279" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\Ending3.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="fin4" sid="500236249161961">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="245279717082732" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\Ending4.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="fin5" sid="307394631812396">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="835382444383936" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\Ending5.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="fin6" sid="224994447513454">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="106650091981500" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\M\Desktop\Cours\FD I\Construct2\Demake_Exam\sprites\Ending6.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="fin" sid="866001054213072">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="100006606691799" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="finTexte" sid="262239818753005">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
+        <object-type name="Keyboard" sid="862029079063359">
+            <plugin id="Keyboard" />
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="interactTOUT" plugin-id="Sprite" sid="783277428182215">
+            <members>
+                <member>aquarium</member>
+                <member>casqueMusique</member>
+                <member>chaussure</member>
+                <member>frigoTélé</member>
+                <member>hélicoptère</member>
+                <member>munitions</member>
+                <member>papaMort</member>
+                <member>pistolet</member>
+                <member>poisson</member>
+                <member>policierMort</member>
+                <member>porteEmma</member>
+                <member>porteSdB</member>
+                <member>portrait</member>
+                <member>table</member>
+                <member>tabletteEmma</member>
+                <member>tablettePapa</member>
+                <member>valise</member>
+                <member>versCouloir</member>
+                <member>versCuisine</member>
+                <member>versSalon</member>
+            </members>
+        </family>
+        <family name="TexteChoixTOUT" plugin-id="Text" sid="825619757243261">
+            <members>
+                <member>0Texte</member>
+                <member>1Choix</member>
+                <member>2Choix</member>
+                <member>3Choix</member>
+                <member>4Choix</member>
+                <member>5Choix</member>
+                <member>6Choix</member>
+                <member>7Choix</member>
+            </members>
+        </family>
+        <family name="DEUXchoix" plugin-id="Text" sid="900011410910220">
+            <members>
+                <member>1Choix</member>
+                <member>2Choix</member>
+            </members>
+        </family>
+        <family name="QUATREchoix" plugin-id="Text" sid="271386604343933">
+            <members>
+                <member>1Choix</member>
+                <member>2Choix</member>
+                <member>3Choix</member>
+                <member>4Choix</member>
+            </members>
+        </family>
+        <family name="SEPTchoix" plugin-id="Text" sid="128535609271404">
+            <members>
+                <member>1Choix</member>
+                <member>2Choix</member>
+                <member>3Choix</member>
+                <member>4Choix</member>
+                <member>5Choix</member>
+                <member>6Choix</member>
+                <member>7Choix</member>
+            </members>
+        </family>
+        <family name="boutonsTexte" plugin-id="Text" sid="627024351768232">
+            <members>
+                <member>textCredits</member>
+                <member>textInstructions</member>
+                <member>textRéussite</member>
+            </members>
+        </family>
+        <family name="boutonsFond" plugin-id="Sprite" sid="306108075292091">
+            <members>
+                <member>1réussite</member>
+                <member>2instructions</member>
+                <member>3crédits</member>
+            </members>
+        </family>
+        <family name="zoom" plugin-id="Sprite" sid="701592770011940">
+            <members>
+                <member>portraitZoom</member>
+                <member>tabletteZoom</member>
+            </members>
+        </family>
+        <family name="interactPre" plugin-id="Sprite" sid="378891536579973">
+            <members>
+                <member>aquarium</member>
+                <member>Captain</member>
+                <member>poisson</member>
+                <member>portrait</member>
+            </members>
+        </family>
+        <family name="interactPost" plugin-id="Sprite" sid="144812251840861">
+            <members>
+                <member>casqueMusique</member>
+                <member>chaussure</member>
+                <member>dehors</member>
+                <member>frigoTélé</member>
+                <member>hélicoptère</member>
+                <member>munitions</member>
+                <member>papaMort</member>
+                <member>pistolet</member>
+                <member>policierMort</member>
+                <member>porteEmma</member>
+                <member>porteSdB</member>
+                <member>swat</member>
+                <member>table</member>
+                <member>tabletteEmma</member>
+                <member>tablettePapa</member>
+                <member>valise</member>
+                <member>versCouloir</member>
+                <member>versCuisine</member>
+                <member>versSalon</member>
+            </members>
+        </family>
+        <family name="objetsTOUT" plugin-id="Sprite" sid="540994023683183">
+            <members>
+                <member>aquarium</member>
+                <member>Captain</member>
+                <member>casqueMusique</member>
+                <member>chaussure</member>
+                <member>commodeCouloir</member>
+                <member>Connor</member>
+                <member>Daniel</member>
+                <member>Emma</member>
+                <member>frigoTélé</member>
+                <member>hélicoptère</member>
+                <member>munitions</member>
+                <member>papaMort</member>
+                <member>pistolet</member>
+                <member>poisson</member>
+                <member>policierMort</member>
+                <member>porteEmma</member>
+                <member>porteSdB</member>
+                <member>portrait</member>
+                <member>swat</member>
+                <member>table</member>
+                <member>tabletteEmma</member>
+                <member>tablettePapa</member>
+                <member>valise</member>
+            </members>
+        </family>
+        <family name="Fins" plugin-id="Sprite" sid="555272754021662">
+            <members>
+                <member>fin</member>
+                <member>fin1</member>
+                <member>fin2</member>
+                <member>fin3</member>
+                <member>fin4</member>
+                <member>fin5</member>
+                <member>fin6</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>lvl.xml</layout>
+        <layout>titleScreen.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>[lvl].xml</event-sheet>
+        <event-sheet>[titleScreen].xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="2" />
+        <global-instance type="Audio" uid="38">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="helico.ogg" />
+        <file name="pan.ogg" />
+        <file name="plouf.ogg" />
+        <file name="ramassage_degainage_arme.ogg" />
+        <file name="ding.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="daniel.ogg" />
+        <file name="Ending1.ogg" />
+        <file name="Ending2.ogg" />
+        <file name="Ending3.ogg" />
+        <file name="Ending4.ogg" />
+        <file name="Ending5.ogg" />
+        <file name="Ending6.ogg" />
+        <file name="maison.ogg" />
+        <file name="menu.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">titleScreen</layout>
+        <layout active="1" order="2">lvl</layout>
+        <event-sheet order="1">[titleScreen]</event-sheet>
+        <event-sheet order="3">[lvl]</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1">
+        <family expanded="0" name="interactTOUT" />
+        <family expanded="0" name="TexteChoixTOUT" />
+        <family expanded="0" name="DEUXchoix" />
+        <family expanded="0" name="QUATREchoix" />
+        <family expanded="0" name="SEPTchoix" />
+        <family expanded="0" name="boutonsTexte" />
+        <family expanded="0" name="boutonsFond" />
+        <family expanded="0" name="zoom" />
+        <family expanded="0" name="interactPre" />
+        <family expanded="0" name="interactPost" />
+        <family expanded="0" name="objetsTOUT" />
+        <family expanded="0" name="Fins" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/Maps/" />
+        <folder expanded="0" path="object-folder/Interact/" />
+        <folder expanded="1" path="object-folder/Personnages/" />
+        <folder expanded="0" path="object-folder/Misc/" />
+        <folder expanded="0" path="object-folder/interface/" />
+        <folder expanded="0" path="object-folder/interface/boutons/" />
+        <folder expanded="0" path="object-folder/interface/Texte/" />
+        <folder expanded="1" path="object-folder/Fins/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/chambreParents/" />
+        <folder expanded="1" path="animation-folder/chambreEmma/" />
+        <folder expanded="1" path="animation-folder/salon/" />
+        <folder expanded="1" path="animation-folder/terasse/" />
+        <folder expanded="1" path="animation-folder/ballustrade/" />
+        <folder expanded="1" path="animation-folder/commodeCouloir/" />
+        <folder expanded="1" path="animation-folder/murVert/" />
+        <folder expanded="1" path="animation-folder/murJaune/" />
+        <folder expanded="1" path="animation-folder/portrait/" />
+        <folder expanded="1" path="animation-folder/tabletteEmma/" />
+        <folder expanded="1" path="animation-folder/tablettePapa/" />
+        <folder expanded="1" path="animation-folder/pistolet/" />
+        <folder expanded="1" path="animation-folder/munitions/" />
+        <folder expanded="1" path="animation-folder/valise/" />
+        <folder expanded="1" path="animation-folder/chaussure/" />
+        <folder expanded="1" path="animation-folder/frigoTélé/" />
+        <folder expanded="1" path="animation-folder/casqueMusique/" />
+        <folder expanded="1" path="animation-folder/table/" />
+        <folder expanded="1" path="animation-folder/policierMort/" />
+        <folder expanded="1" path="animation-folder/papaMort/" />
+        <folder expanded="1" path="animation-folder/poisson/" />
+        <folder expanded="1" path="animation-folder/aquarium/" />
+        <folder expanded="1" path="animation-folder/hélicoptère/" />
+        <folder expanded="1" path="animation-folder/porteSdB/" />
+        <folder expanded="1" path="animation-folder/porteEmma/" />
+        <folder expanded="1" path="animation-folder/tablettePapaPosition/" />
+        <folder expanded="1" path="animation-folder/swat/" />
+        <folder expanded="1" path="animation-folder/pistoletPosition/" />
+        <folder expanded="1" path="animation-folder/portraitZoom/" />
+        <folder expanded="1" path="animation-folder/tabletteZoom/" />
+        <folder expanded="1" path="animation-folder/versCouloir/" />
+        <folder expanded="1" path="animation-folder/versCuisine/" />
+        <folder expanded="1" path="animation-folder/versSalon/" />
+        <folder expanded="1" path="animation-folder/Connor/" />
+        <folder expanded="1" path="animation-folder/Daniel/" />
+        <folder expanded="1" path="animation-folder/Emma/" />
+        <folder expanded="1" path="animation-folder/Captain/" />
+        <folder expanded="1" path="animation-folder/camera/" />
+        <folder expanded="1" path="animation-folder/haut/" />
+        <folder expanded="1" path="animation-folder/dehors/" />
+        <folder expanded="1" path="animation-folder/directions/" />
+        <folder expanded="1" path="animation-folder/fondu/" />
+        <folder expanded="1" path="animation-folder/fondTitre/" />
+        <folder expanded="1" path="animation-folder/fonduTitre/" />
+        <folder expanded="1" path="animation-folder/logo/" />
+        <folder expanded="1" path="animation-folder/spaceToStart/" />
+        <folder expanded="1" path="animation-folder/2instructions/" />
+        <folder expanded="1" path="animation-folder/3crédits/" />
+        <folder expanded="1" path="animation-folder/1réussite/" />
+        <folder expanded="1" path="animation-folder/fond/" />
+        <folder expanded="1" path="animation-folder/fin1/" />
+        <folder expanded="1" path="animation-folder/fin2/" />
+        <folder expanded="1" path="animation-folder/fin3/" />
+        <folder expanded="1" path="animation-folder/fin4/" />
+        <folder expanded="1" path="animation-folder/fin5/" />
+        <folder expanded="1" path="animation-folder/fin6/" />
+        <folder expanded="1" path="animation-folder/fin/" />
+    </folders-expanded>
+</c2uistate>
