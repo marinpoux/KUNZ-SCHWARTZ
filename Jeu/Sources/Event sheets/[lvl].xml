@@ -110,7 +110,7 @@
                                     <param id="1" name="Y">Daniel.Y-200</param>
                                 </action>
                                 <action id="0" name="Set text" sid="780262541117911" type="trust">
-                                    <param id="0" name="Text">&quot;Trust :&#x0D;&#x0A;&quot;&amp;Trust</param>
+                                    <param id="0" name="Text">&quot;Trust&#x0D;&#x0A;&quot;&amp;Trust</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -23118,15 +23118,15 @@
                                                         </action>
                                                         <action id="-4" name="Set position to another object" sid="270880742871708" type="fin">
                                                             <param id="0" name="Object">Connor</param>
-                                                            <param id="1" name="Image point (optional)">fin</param>
+                                                            <param id="1" name="Image point (optional)">0</param>
                                                         </action>
                                                         <action id="-4" name="Set position to another object" sid="106985403441141" type="fin1">
                                                             <param id="0" name="Object">Connor</param>
-                                                            <param id="1" name="Image point (optional)">fin</param>
+                                                            <param id="1" name="Image point (optional)">0</param>
                                                         </action>
                                                         <action id="-4" name="Set position to another object" sid="978007637244003" type="finTexte">
                                                             <param id="0" name="Object">Connor</param>
-                                                            <param id="1" name="Image point (optional)">fin</param>
+                                                            <param id="1" name="Image point (optional)">0</param>
                                                         </action>
                                                         <action id="-15" name="Set visible" sid="494211915239691" type="fin">
                                                             <param id="0" name="Visibility">1</param>
@@ -23215,15 +23215,15 @@
                                                         </action>
                                                         <action id="-4" name="Set position to another object" sid="165618900882963" type="fin">
                                                             <param id="0" name="Object">Connor</param>
-                                                            <param id="1" name="Image point (optional)">fin</param>
+                                                            <param id="1" name="Image point (optional)">0</param>
                                                         </action>
                                                         <action id="-4" name="Set position to another object" sid="846120796623045" type="fin2">
                                                             <param id="0" name="Object">Connor</param>
-                                                            <param id="1" name="Image point (optional)">fin</param>
+                                                            <param id="1" name="Image point (optional)">0</param>
                                                         </action>
                                                         <action id="-4" name="Set position to another object" sid="527122659169462" type="finTexte">
                                                             <param id="0" name="Object">Connor</param>
-                                                            <param id="1" name="Image point (optional)">fin</param>
+                                                            <param id="1" name="Image point (optional)">0</param>
                                                         </action>
                                                         <action id="-15" name="Set visible" sid="625488343413021" type="fin">
                                                             <param id="0" name="Visibility">1</param>
@@ -23276,15 +23276,15 @@
                                                         </action>
                                                         <action id="-4" name="Set position to another object" sid="498952949778168" type="fin">
                                                             <param id="0" name="Object">Connor</param>
-                                                            <param id="1" name="Image point (optional)">fin</param>
+                                                            <param id="1" name="Image point (optional)">0</param>
                                                         </action>
                                                         <action id="-4" name="Set position to another object" sid="215352637537671" type="fin3">
                                                             <param id="0" name="Object">Connor</param>
-                                                            <param id="1" name="Image point (optional)">fin</param>
+                                                            <param id="1" name="Image point (optional)">0</param>
                                                         </action>
                                                         <action id="-4" name="Set position to another object" sid="963282638461323" type="finTexte">
                                                             <param id="0" name="Object">Connor</param>
-                                                            <param id="1" name="Image point (optional)">fin</param>
+                                                            <param id="1" name="Image point (optional)">0</param>
                                                         </action>
                                                         <action id="-15" name="Set visible" sid="414460467454248" type="fin">
                                                             <param id="0" name="Visibility">1</param>

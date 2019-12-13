@@ -643,7 +643,6 @@
                 <animation-folder>
                     <animation framecount="2" loop="0" name="stand" pingpong="0" repeatcount="1" repeatto="0" sid="164874179938132" speed="1">
                         <frame duration="1" hotspotX="0.50365" hotspotY="0.5">
-                            <image-point name="fin" x="-3.76642" y="0.413043" />
                             <collision-poly>
                                 <point x="0.185185" y="0" />
                                 <point x="0.814815" y="0" />
