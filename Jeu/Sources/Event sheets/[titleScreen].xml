@@ -15,6 +15,9 @@
                     <param id="3" name="Volume">-10</param>
                     <param id="1" name="Tag (optional)">&quot;menu&quot;</param>
                 </action>
+                <action id="-16" name="Wait" sid="416690089669359" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="942157188784214">
@@ -24,14 +27,12 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-16" name="Wait" sid="416690089669359" type="System">
-                    <param id="0" name="Seconds">1</param>
+                <action behavior="Fade" id="1" name="Start fade" sid="312509103481887" type="ecranTitre" />
+                <action id="-15" name="Set visible" sid="578668665296934" type="spaceToStart">
+                    <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="6" name="Stop" sid="411741921411762" type="Audio">
-                    <param id="0" name="Tag">&quot;menu&quot;</param>
-                </action>
-                <action id="-2" name="Go to layout" sid="954777891541450" type="System">
-                    <param id="0" name="Layout">lvl</param>
+                <action id="-15" name="Set visible" sid="666308230884951" type="logo">
+                    <param id="0" name="Visibility">0</param>
                 </action>
             </actions>
         </event-block>
@@ -41,6 +42,19 @@
             </conditions>
             <actions>
                 <action behavior="Fade" id="0" name="Restart fade" sid="327177699329036" type="spaceToStart" />
+            </actions>
+        </event-block>
+        <event-block sid="156547758009066">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="801880689187925" type="ecranTitre" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="411741921411762" type="Audio">
+                    <param id="0" name="Tag">&quot;menu&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="954777891541450" type="System">
+                    <param id="0" name="Layout">lvl</param>
+                </action>
             </actions>
         </event-block>
     </events>

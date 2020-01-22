@@ -39,12 +39,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/Maps/" />
         <folder expanded="0" path="object-folder/Interact/" />
-        <folder expanded="1" path="object-folder/Personnages/" />
-        <folder expanded="0" path="object-folder/Misc/" />
+        <folder expanded="0" path="object-folder/Personnages/" />
+        <folder expanded="1" path="object-folder/Misc/" />
         <folder expanded="0" path="object-folder/interface/" />
         <folder expanded="0" path="object-folder/interface/boutons/" />
         <folder expanded="0" path="object-folder/interface/Texte/" />
-        <folder expanded="1" path="object-folder/Fins/" />
+        <folder expanded="0" path="object-folder/Fins/" />
+        <folder expanded="0" path="object-folder/ecranTitre/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -90,13 +91,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Captain/" />
         <folder expanded="1" path="animation-folder/camera/" />
         <folder expanded="1" path="animation-folder/haut/" />
-        <folder expanded="1" path="animation-folder/dehors/" />
+        <folder expanded="1" path="animation-folder/sortir/" />
         <folder expanded="1" path="animation-folder/directions/" />
         <folder expanded="1" path="animation-folder/fondu/" />
-        <folder expanded="1" path="animation-folder/fondTitre/" />
-        <folder expanded="1" path="animation-folder/fonduTitre/" />
-        <folder expanded="1" path="animation-folder/logo/" />
-        <folder expanded="1" path="animation-folder/spaceToStart/" />
+        <folder expanded="1" path="animation-folder/dehors/" />
+        <folder expanded="1" path="animation-folder/credits/" />
         <folder expanded="1" path="animation-folder/2instructions/" />
         <folder expanded="1" path="animation-folder/3crédits/" />
         <folder expanded="1" path="animation-folder/1réussite/" />
@@ -108,5 +107,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/fin5/" />
         <folder expanded="1" path="animation-folder/fin6/" />
         <folder expanded="1" path="animation-folder/fin/" />
+        <folder expanded="1" path="animation-folder/ecranTitre/" />
+        <folder expanded="1" path="animation-folder/logo/" />
+        <folder expanded="1" path="animation-folder/spaceToStart/" />
+        <folder expanded="1" path="animation-folder/fonduTitre/" />
+        <folder expanded="1" path="animation-folder/fondTitre/" />
     </folders-expanded>
 </c2uistate>

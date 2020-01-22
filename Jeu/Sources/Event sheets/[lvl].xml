@@ -56,7 +56,7 @@
                                     <param id="0" name="Instance variable">briefingOK</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
-                                <action id="-10" name="Set value" sid="421022981810977" type="dehors">
+                                <action id="-10" name="Set value" sid="421022981810977" type="sortir">
                                     <param id="0" name="Instance variable">story</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
@@ -68,6 +68,9 @@
                                     <param id="0" name="Visibility">0</param>
                                 </action>
                                 <action id="-15" name="Set visible" sid="341589166581592" type="finTexte">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="424194011244660" type="credits">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
                             </actions>
@@ -110,7 +113,7 @@
                                     <param id="1" name="Y">Daniel.Y-200</param>
                                 </action>
                                 <action id="0" name="Set text" sid="780262541117911" type="trust">
-                                    <param id="0" name="Text">&quot;Trust&#x0D;&#x0A;&quot;&amp;Trust</param>
+                                    <param id="0" name="Text">&quot;Trust :&#x0D;&#x0A;&quot;&amp;Trust</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -118,7 +121,6 @@
                             <sub-events>
                                 <event-block sid="104235929203661">
                                     <conditions>
-                                        <condition id="-2" name="On start of layout" sid="664450870667749" type="System" />
                                         <condition id="2" name="Key is down" sid="557471398549553" type="Keyboard">
                                             <param id="0" name="Key">37</param>
                                         </condition>
@@ -131,7 +133,6 @@
                                 </event-block>
                                 <event-block sid="206294156239207">
                                     <conditions>
-                                        <condition id="-2" name="On start of layout" sid="949458440847113" type="System" />
                                         <condition id="2" name="Key is down" sid="919277414135503" type="Keyboard">
                                             <param id="0" name="Key">39</param>
                                         </condition>
@@ -144,7 +145,7 @@
                                 </event-block>
                                 <event-block sid="273158734398691">
                                     <conditions>
-                                        <condition id="-2" name="On start of layout" sid="584354715532256" type="System" />
+                                        <condition id="-1" name="Every tick" sid="892684672327521" type="System" />
                                     </conditions>
                                     <actions>
                                         <action id="-3" name="Set position" sid="150828391200204" type="directions">
@@ -153,6 +154,9 @@
                                         </action>
                                         <action id="-41" name="Wait for signal" sid="529275717628893" type="System">
                                             <param id="0" name="Tag">&quot;bouge&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="197995827495814" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
                                         </action>
                                         <action behavior="Fade" id="1" name="Start fade" sid="383737221851368" type="directions" />
                                     </actions>
@@ -317,6 +321,10 @@
                                             <param id="0" name="Instance variable">story</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
+                                        <action id="4" name="Set animation" sid="462919867391714" type="hélicoptère">
+                                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -423,11 +431,63 @@
                                     <param id="0" name="Visibility">1</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="699680924336009" type="System">
-                                    <param id="0" name="Seconds">5</param>
+                                    <param id="0" name="Seconds">3</param>
                                 </action>
                                 <action id="-13" name="Set boolean" sid="106516115241827" type="Connor">
                                     <param id="0" name="Instance variable">Story</param>
                                     <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="641175341707468" title="credits">
+                    <sub-events>
+                        <event-block sid="700961418494855">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="214043557795624" type="Keyboard">
+                                    <param id="0" name="Key">17</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="707017530723624" type="Connor">
+                                    <param id="0" name="Instance variable">Story</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="826684870716437" type="Connor">
+                                    <param id="0" name="Instance variable">Outside</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="827030537907420" type="System">
+                                    <param id="0" name="Variable">Fin</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-9" inverted="1" name="Is visible" sid="487652237500487" type="credits" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="791575728516410" type="credits">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="181518305802939">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="100144908102444" type="Keyboard">
+                                    <param id="0" name="Key">17</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="833527415928588" type="Connor">
+                                    <param id="0" name="Instance variable">Story</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="106483416248919" type="Connor">
+                                    <param id="0" name="Instance variable">Outside</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="952466115030665" type="System">
+                                    <param id="0" name="Variable">Fin</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="393677326017638" type="credits" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="473091568180952" type="credits">
+                                    <param id="0" name="Visibility">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -445,7 +505,7 @@
                                     <param id="0" name="Instance variable">Outside</param>
                                 </condition>
                                 <condition id="1" inverted="1" name="Is overlapping another object" sid="823662336661313" type="Connor">
-                                    <param id="0" name="Object">dehors</param>
+                                    <param id="0" name="Object">sortir</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -561,7 +621,7 @@
                                     <param id="0" name="Control">1</param>
                                 </action>
                                 <action behavior="Platform" id="1" name="Set max speed" sid="192670293225106" type="Connor">
-                                    <param id="0" name="Max Speed">50</param>
+                                    <param id="0" name="Max Speed">20</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="583879243564219" type="Connor">
                                     <param id="0" name="Animation">&quot;walk&quot;</param>
@@ -681,7 +741,7 @@
                         <event-block sid="744344826413011">
                             <conditions>
                                 <condition id="1" name="Is overlapping another object" sid="321538225579968" type="Connor">
-                                    <param id="0" name="Object">dehors</param>
+                                    <param id="0" name="Object">sortir</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -710,7 +770,7 @@
                                 <action id="-15" name="Set visible" sid="756464131772069" type="DEUXchoix">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
-                                <action id="-10" name="Set value" sid="684750373760206" type="dehors">
+                                <action id="-10" name="Set value" sid="684750373760206" type="sortir">
                                     <param id="0" name="Instance variable">story</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
@@ -718,7 +778,7 @@
                         </event-block>
                         <event-block sid="938413324981800">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="775165080058587" type="dehors">
+                                <condition id="-7" name="Compare instance variable" sid="775165080058587" type="sortir">
                                     <param id="0" name="Instance variable">story</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">1</param>
@@ -733,9 +793,9 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-3" name="Set position" sid="223753780407772" type="Connor">
-                                            <param id="0" name="X">dehors.X+100</param>
-                                            <param id="1" name="Y">dehors.Y-20</param>
+                                        <action id="-4" name="Set position to another object" sid="223753780407772" type="Connor">
+                                            <param id="0" name="Object">dehors</param>
+                                            <param id="1" name="Image point (optional)">0</param>
                                         </action>
                                         <action behavior="Platform" id="11" name="Set enabled" sid="338796888514223" type="Connor">
                                             <param id="0" name="State">1</param>
@@ -744,7 +804,7 @@
                                             <param id="0" name="Instance variable">Outside</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
-                                        <action id="-10" name="Set value" sid="486853639510145" type="dehors">
+                                        <action id="-10" name="Set value" sid="486853639510145" type="sortir">
                                             <param id="0" name="Instance variable">story</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
@@ -758,13 +818,13 @@
                                     </conditions>
                                     <actions>
                                         <action id="-3" name="Set position" sid="431331506858930" type="Connor">
-                                            <param id="0" name="X">dehors.X-200</param>
-                                            <param id="1" name="Y">dehors.Y-20</param>
+                                            <param id="0" name="X">sortir.X-200</param>
+                                            <param id="1" name="Y">sortir.Y-20</param>
                                         </action>
                                         <action behavior="Platform" id="11" name="Set enabled" sid="829804814867337" type="Connor">
                                             <param id="0" name="State">1</param>
                                         </action>
-                                        <action id="-10" name="Set value" sid="653417787874773" type="dehors">
+                                        <action id="-10" name="Set value" sid="653417787874773" type="sortir">
                                             <param id="0" name="Instance variable">story</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
@@ -834,8 +894,9 @@
                             <param id="0" name="Instance variable">Outside</param>
                         </condition>
                         <condition id="1" inverted="1" name="Is overlapping another object" sid="306933513148741" type="Connor">
-                            <param id="0" name="Object">dehors</param>
+                            <param id="0" name="Object">sortir</param>
                         </condition>
+                        <condition id="-9" inverted="1" name="Is visible" sid="828408516089159" type="credits" />
                     </conditions>
                     <actions>
                         <action id="-15" name="Set visible" sid="517919663765675" type="TexteChoixTOUT">
@@ -852,11 +913,21 @@
                             <param id="0" name="Instance variable">Story</param>
                         </condition>
                         <condition id="1" inverted="1" name="Is overlapping another object" sid="587031901487945" type="Connor">
-                            <param id="0" name="Object">dehors</param>
+                            <param id="0" name="Object">sortir</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action behavior="Platform" id="11" name="Set enabled" sid="954444380240519" type="Connor">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="341104106100214">
+                    <conditions>
+                        <condition id="-9" name="Is visible" sid="676466345626637" type="credits" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="691295812079698" type="Connor">
                             <param id="0" name="State">0</param>
                         </action>
                     </actions>
@@ -1064,7 +1135,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Set text" sid="131885675138666" type="1Choix">
-                                            <param id="0" name="Text">&quot;1 - Go to living room&quot;</param>
+                                            <param id="0" name="Text">&quot;1 - Go to kitchen&quot;</param>
                                         </action>
                                         <action id="0" name="Set text" sid="846607713931433" type="2Choix">
                                             <param id="0" name="Text">&quot;2 - Investigate something else&quot;</param>
@@ -1154,7 +1225,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Set text" sid="142871575775334" type="1Choix">
-                                            <param id="0" name="Text">&quot;1 - Go to kichen&quot;</param>
+                                            <param id="0" name="Text">&quot;1 - Go to living room&quot;</param>
                                         </action>
                                         <action id="0" name="Set text" sid="635018337549688" type="2Choix">
                                             <param id="0" name="Text">&quot;2 - Investigate something else&quot;</param>
@@ -2299,7 +2370,29 @@
                                         </action>
                                         <action id="-10" name="Set value" sid="143613819846219" type="poisson">
                                             <param id="0" name="Instance variable">story</param>
-                                            <param id="1" name="Value">2</param>
+                                            <param id="1" name="Value">4</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="338526148219610">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="550417274832673" type="Keyboard">
+                                            <param id="0" name="Key">97</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="991019662750394" type="poisson">
+                                            <param id="0" name="Instance variable">story</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-13" name="Set boolean" sid="375985717152852" type="Connor">
+                                            <param id="0" name="Instance variable">Story</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="263758753019096" type="poisson">
+                                            <param id="0" name="Instance variable">story</param>
+                                            <param id="1" name="Value">3</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -4050,7 +4143,7 @@
                                                 <action id="-16" name="Wait" sid="569942008963092" type="System">
                                                     <param id="0" name="Seconds">1</param>
                                                 </action>
-                                                <action id="-15" name="Set visible" sid="605660060427711" type="portraitZoom">
+                                                <action id="-15" name="Set visible" sid="605660060427711" type="tabletteZoom">
                                                     <param id="0" name="Visibility">1</param>
                                                 </action>
                                                 <action id="-11" name="Subtract from" sid="872695212353081" type="System">
@@ -4198,7 +4291,7 @@
                                         <action id="-15" name="Set visible" sid="378324089076155" type="TexteChoixTOUT">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="163196118473295" type="portraitZoom">
+                                        <action id="-15" name="Set visible" sid="163196118473295" type="tabletteZoom">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
                                         <action id="0" name="Set text" sid="274762182399786" type="1Choix">
@@ -23116,8 +23209,11 @@
                                                         <action id="6" name="Stop" sid="130235900859938" type="Audio">
                                                             <param id="0" name="Tag">&quot;daniel&quot;</param>
                                                         </action>
-                                                        <action id="-4" name="Set position to another object" sid="270880742871708" type="fin">
-                                                            <param id="0" name="Object">Connor</param>
+                                                        <action behavior="Platform" id="11" name="Set enabled" sid="308128461762653" type="Connor">
+                                                            <param id="0" name="State">0</param>
+                                                        </action>
+                                                        <action id="-4" name="Set position to another object" sid="270880742871708" type="Connor">
+                                                            <param id="0" name="Object">fin</param>
                                                             <param id="1" name="Image point (optional)">0</param>
                                                         </action>
                                                         <action id="-4" name="Set position to another object" sid="106985403441141" type="fin1">
@@ -23152,8 +23248,15 @@
                                                         <action id="-15" name="Set visible" sid="969469929105862" type="fin1">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
-                                                        <action id="-16" name="Wait" sid="252946234221693" type="System">
-                                                            <param id="0" name="Seconds">10</param>
+                                                        <action id="-16" name="Wait" sid="687264376914786" type="System">
+                                                            <param id="0" name="Seconds">1.0</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="825966134477149" type="System">
+                                                            <param id="0" name="Variable">Fin</param>
+                                                            <param id="1" name="Value">1.2</param>
+                                                        </action>
+                                                        <action id="-41" name="Wait for signal" sid="444719922714075" type="System">
+                                                            <param id="0" name="Tag">&quot;exit&quot;</param>
                                                         </action>
                                                         <action id="-2" name="Go to layout" sid="740905686684404" type="System">
                                                             <param id="0" name="Layout">titleScreen</param>
@@ -23213,8 +23316,11 @@
                                                         <action id="6" name="Stop" sid="794554815667729" type="Audio">
                                                             <param id="0" name="Tag">&quot;daniel&quot;</param>
                                                         </action>
-                                                        <action id="-4" name="Set position to another object" sid="165618900882963" type="fin">
-                                                            <param id="0" name="Object">Connor</param>
+                                                        <action behavior="Platform" id="11" name="Set enabled" sid="848637309716104" type="Connor">
+                                                            <param id="0" name="State">0</param>
+                                                        </action>
+                                                        <action id="-4" name="Set position to another object" sid="538684801970406" type="Connor">
+                                                            <param id="0" name="Object">fin</param>
                                                             <param id="1" name="Image point (optional)">0</param>
                                                         </action>
                                                         <action id="-4" name="Set position to another object" sid="846120796623045" type="fin2">
@@ -23249,8 +23355,15 @@
                                                         <action id="-15" name="Set visible" sid="671570126366591" type="fin2">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
-                                                        <action id="-16" name="Wait" sid="353122792214916" type="System">
-                                                            <param id="0" name="Seconds">10</param>
+                                                        <action id="-16" name="Wait" sid="590319901138122" type="System">
+                                                            <param id="0" name="Seconds">1.0</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="294762220847209" type="System">
+                                                            <param id="0" name="Variable">Fin</param>
+                                                            <param id="1" name="Value">2.2</param>
+                                                        </action>
+                                                        <action id="-41" name="Wait for signal" sid="286480695483138" type="System">
+                                                            <param id="0" name="Tag">&quot;exit&quot;</param>
                                                         </action>
                                                         <action id="-2" name="Go to layout" sid="666886062594888" type="System">
                                                             <param id="0" name="Layout">titleScreen</param>
@@ -23274,8 +23387,11 @@
                                                         <action id="6" name="Stop" sid="316057358224740" type="Audio">
                                                             <param id="0" name="Tag">&quot;daniel&quot;</param>
                                                         </action>
-                                                        <action id="-4" name="Set position to another object" sid="498952949778168" type="fin">
-                                                            <param id="0" name="Object">Connor</param>
+                                                        <action behavior="Platform" id="11" name="Set enabled" sid="332469193977043" type="Connor">
+                                                            <param id="0" name="State">0</param>
+                                                        </action>
+                                                        <action id="-4" name="Set position to another object" sid="683984926648710" type="Connor">
+                                                            <param id="0" name="Object">fin</param>
                                                             <param id="1" name="Image point (optional)">0</param>
                                                         </action>
                                                         <action id="-4" name="Set position to another object" sid="215352637537671" type="fin3">
@@ -23310,8 +23426,15 @@
                                                         <action id="-15" name="Set visible" sid="624778849159054" type="fin3">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
-                                                        <action id="-16" name="Wait" sid="467402484937999" type="System">
-                                                            <param id="0" name="Seconds">10</param>
+                                                        <action id="-16" name="Wait" sid="973961152581552" type="System">
+                                                            <param id="0" name="Seconds">1.0</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="394402236245431" type="System">
+                                                            <param id="0" name="Variable">Fin</param>
+                                                            <param id="1" name="Value">3.2</param>
+                                                        </action>
+                                                        <action id="-41" name="Wait for signal" sid="429765631987352" type="System">
+                                                            <param id="0" name="Tag">&quot;exit&quot;</param>
                                                         </action>
                                                         <action id="-2" name="Go to layout" sid="173682723415161" type="System">
                                                             <param id="0" name="Layout">titleScreen</param>
@@ -23335,8 +23458,11 @@
                                                         <action id="6" name="Stop" sid="184842931842072" type="Audio">
                                                             <param id="0" name="Tag">&quot;daniel&quot;</param>
                                                         </action>
-                                                        <action id="-4" name="Set position to another object" sid="939773644271161" type="fin">
-                                                            <param id="0" name="Object">Connor</param>
+                                                        <action behavior="Platform" id="11" name="Set enabled" sid="117592603543647" type="Connor">
+                                                            <param id="0" name="State">0</param>
+                                                        </action>
+                                                        <action id="-4" name="Set position to another object" sid="876473824853548" type="Connor">
+                                                            <param id="0" name="Object">fin</param>
                                                             <param id="1" name="Image point (optional)">0</param>
                                                         </action>
                                                         <action id="-4" name="Set position to another object" sid="529061071079044" type="fin4">
@@ -23371,8 +23497,15 @@
                                                         <action id="-15" name="Set visible" sid="981846722888810" type="fin4">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
-                                                        <action id="-16" name="Wait" sid="129899630604482" type="System">
-                                                            <param id="0" name="Seconds">10</param>
+                                                        <action id="-16" name="Wait" sid="335058728775336" type="System">
+                                                            <param id="0" name="Seconds">1.0</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="705062287944027" type="System">
+                                                            <param id="0" name="Variable">Fin</param>
+                                                            <param id="1" name="Value">4.2</param>
+                                                        </action>
+                                                        <action id="-41" name="Wait for signal" sid="986175670305040" type="System">
+                                                            <param id="0" name="Tag">&quot;exit&quot;</param>
                                                         </action>
                                                         <action id="-2" name="Go to layout" sid="137224921361320" type="System">
                                                             <param id="0" name="Layout">titleScreen</param>
@@ -23396,8 +23529,11 @@
                                                         <action id="6" name="Stop" sid="798080883873794" type="Audio">
                                                             <param id="0" name="Tag">&quot;daniel&quot;</param>
                                                         </action>
-                                                        <action id="-4" name="Set position to another object" sid="174783021473694" type="fin">
-                                                            <param id="0" name="Object">Connor</param>
+                                                        <action behavior="Platform" id="11" name="Set enabled" sid="246790660863489" type="Connor">
+                                                            <param id="0" name="State">0</param>
+                                                        </action>
+                                                        <action id="-4" name="Set position to another object" sid="276423319303945" type="Connor">
+                                                            <param id="0" name="Object">fin</param>
                                                             <param id="1" name="Image point (optional)">0</param>
                                                         </action>
                                                         <action id="-4" name="Set position to another object" sid="575074892517930" type="fin5">
@@ -23432,8 +23568,15 @@
                                                         <action id="-15" name="Set visible" sid="933815362802443" type="fin5">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
-                                                        <action id="-16" name="Wait" sid="651041080450952" type="System">
-                                                            <param id="0" name="Seconds">10</param>
+                                                        <action id="-16" name="Wait" sid="967040939151821" type="System">
+                                                            <param id="0" name="Seconds">1.0</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="937134365682418" type="System">
+                                                            <param id="0" name="Variable">Fin</param>
+                                                            <param id="1" name="Value">5.2</param>
+                                                        </action>
+                                                        <action id="-41" name="Wait for signal" sid="447194049287860" type="System">
+                                                            <param id="0" name="Tag">&quot;exit&quot;</param>
                                                         </action>
                                                         <action id="-2" name="Go to layout" sid="137431106385419" type="System">
                                                             <param id="0" name="Layout">titleScreen</param>
@@ -23457,8 +23600,11 @@
                                                         <action id="6" name="Stop" sid="828941214238787" type="Audio">
                                                             <param id="0" name="Tag">&quot;daniel&quot;</param>
                                                         </action>
-                                                        <action id="-4" name="Set position to another object" sid="110614665387837" type="fin">
-                                                            <param id="0" name="Object">Connor</param>
+                                                        <action behavior="Platform" id="11" name="Set enabled" sid="262422292618404" type="Connor">
+                                                            <param id="0" name="State">0</param>
+                                                        </action>
+                                                        <action id="-4" name="Set position to another object" sid="406052546083803" type="Connor">
+                                                            <param id="0" name="Object">fin</param>
                                                             <param id="1" name="Image point (optional)">0</param>
                                                         </action>
                                                         <action id="-4" name="Set position to another object" sid="169045270723341" type="fin6">
@@ -23493,13 +23639,116 @@
                                                         <action id="-15" name="Set visible" sid="151144274026022" type="fin6">
                                                             <param id="0" name="Visibility">1</param>
                                                         </action>
-                                                        <action id="-16" name="Wait" sid="335563172218713" type="System">
-                                                            <param id="0" name="Seconds">10</param>
+                                                        <action id="-16" name="Wait" sid="476137629447784" type="System">
+                                                            <param id="0" name="Seconds">1.0</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="165610074384985" type="System">
+                                                            <param id="0" name="Variable">Fin</param>
+                                                            <param id="1" name="Value">6.2</param>
+                                                        </action>
+                                                        <action id="-41" name="Wait for signal" sid="335563172218713" type="System">
+                                                            <param id="0" name="Tag">&quot;exit&quot;</param>
                                                         </action>
                                                         <action id="-2" name="Go to layout" sid="878085235168398" type="System">
                                                             <param id="0" name="Layout">titleScreen</param>
                                                         </action>
                                                     </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-group>
+                                        <event-group description="" sid="140239895772351" title="exit">
+                                            <sub-events>
+                                                <event-block sid="682440320094882">
+                                                    <conditions>
+                                                        <condition id="1" name="On any key pressed" sid="907573962154594" type="Keyboard" />
+                                                    </conditions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="864861450992824">
+                                                            <conditions>
+                                                                <condition id="-14" name="Compare variable" sid="352452386463167" type="System">
+                                                                    <param id="0" name="Variable">Fin</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">1.2</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-42" name="Signal" sid="617079665451898" type="System">
+                                                                    <param id="0" name="Tag">&quot;exit&quot;</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="890496798920961">
+                                                            <conditions>
+                                                                <condition id="-14" name="Compare variable" sid="164804537527723" type="System">
+                                                                    <param id="0" name="Variable">Fin</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">2.2</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-42" name="Signal" sid="606647047336624" type="System">
+                                                                    <param id="0" name="Tag">&quot;exit&quot;</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="549290742064344">
+                                                            <conditions>
+                                                                <condition id="-14" name="Compare variable" sid="994210461066184" type="System">
+                                                                    <param id="0" name="Variable">Fin</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">3.2</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-42" name="Signal" sid="642021713293406" type="System">
+                                                                    <param id="0" name="Tag">&quot;exit&quot;</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="997400445963815">
+                                                            <conditions>
+                                                                <condition id="-14" name="Compare variable" sid="193844967756459" type="System">
+                                                                    <param id="0" name="Variable">Fin</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">4.2</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-42" name="Signal" sid="839576206539918" type="System">
+                                                                    <param id="0" name="Tag">&quot;exit&quot;</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="771911311683834">
+                                                            <conditions>
+                                                                <condition id="-14" name="Compare variable" sid="149008280687400" type="System">
+                                                                    <param id="0" name="Variable">Fin</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">5.2</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-42" name="Signal" sid="917257957739578" type="System">
+                                                                    <param id="0" name="Tag">&quot;exit&quot;</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="351134398168192">
+                                                            <conditions>
+                                                                <condition id="-14" name="Compare variable" sid="806652319577137" type="System">
+                                                                    <param id="0" name="Variable">Fin</param>
+                                                                    <param id="1" name="Comparison">0</param>
+                                                                    <param id="2" name="Value">6.2</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-42" name="Signal" sid="285700944345032" type="System">
+                                                                    <param id="0" name="Tag">&quot;exit&quot;</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
                                                 </event-block>
                                             </sub-events>
                                         </event-group>
